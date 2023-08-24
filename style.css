@@ -1,0 +1,628 @@
+#art_riyaka_calculator {
+    color: rgba(99,43,76,1);
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#art_riyaka_calculator h1 {
+    line-height: 1.2;
+    letter-spacing: -0.1em;
+    font-size: 34px;
+    font-family: 'Frontage Bold';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: inherit;
+    color: #373642;
+}
+
+#art_riyaka_calculator span.text {
+    color: rgba(99,43,76,1);
+    text-transform: none;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    font-family: 'Zilla Slab Bold';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.calc-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#year_amount, 
+#clients_output, 
+#additional_amount, 
+#avarage_sale, 
+#additional_revenue, 
+#total_amount {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2em;
+}
+
+#curved1, #curved2, #curved3, #curved4, #curved5, #curved7, #curved8, #curved9, #curved10, #curved11 {
+    display: inline-block;
+}
+
+#curved1 img {
+    position: relative;
+    height: 9px;
+    top: 12px;
+}
+
+#curved2 img {
+    position: relative;
+    height: 9px;
+    top: 12px;
+}
+
+#curved3 img {
+    position: relative;
+    height: 9px;
+    top: 12px;
+}
+
+#curved4 img {
+    position: relative;
+    height: 9px;
+    top: 12px;
+}
+
+#curved10 img {
+    position: relative;
+    height: 9px;
+    top: 12px;
+}
+
+#curved5 img {
+    position: relative;
+    height: 9px;
+    top: -32px;
+    left: -53px;
+    max-width: 122%!important;
+    width: 122%;
+}
+
+#curved11 img {
+    position: relative;
+    height: 9px;
+    top: -32px;
+    left: -53px;
+    max-width: 122%!important;
+    width: 122%;
+
+}
+
+#curved7 img,
+#curved8 img,
+#curved9 img {
+    display: none;
+}
+
+#additional_amount {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2em;
+}
+
+#total_amount {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2em;
+}
+
+.final-result {
+  text-align: center;
+    max-width: 540px;
+    border: 2px solid rgba(244,95,55,0.8);
+    background-color: #fff;
+    padding: 2em 1em;
+    margin-top:  10px;
+    position: relative;
+}
+
+#additional_amount, 
+#year_amount, 
+#clients_output, 
+#avarage_sale, 
+#total_amount {
+    text-align: center;
+    max-width: 100px;
+    border: 2px solid rgba(244,95,55,0.8);
+    background-color: #fff;
+    padding: 10px 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-top:  0;
+    position: relative;
+    top: 23px;
+}
+
+#clients_output {
+   padding-right: 60px;
+   padding-left: 60px;
+}
+
+#avarage_sale {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#curved-line {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#curved-line-2 {
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+    border-top: 4px solid gold;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-color: transparent;
+    position: relative;
+    top: 4px;
+}
+
+#curved-line-2-2 {
+    display: inline-block;
+    height: 20px;
+    width: 110%;
+    border-top: 6px solid gold;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-color: transparent;
+    position: relative;
+    top: -14px;
+    left: -20px;
+}
+
+#clients_input, #digital_product, #product_cost, #percent, #new_price {
+  text-align: center;
+  border: 1.5px solid rgba(106,175,170,1);
+  background-color: #fff;
+  color: rgba(99,43,76,1);
+  padding: 10px 10px;
+  border-radius: 0;
+  font-size: 1.3em;
+  font-weight: 800;
+  max-width: 127px;
+  margin-top: -7px;
+  height: auto;
+}
+
+#clients_input {
+    max-width: 110px;
+}
+
+#product_cost {
+  max-width: 110px;
+}
+
+#digital_product {
+  max-width: 200px;
+}
+
+#percent {
+  max-width: 82px;
+}
+
+#new_price {
+  max-width: 100px;
+}
+
+.last-row {
+    margin-top: 0;
+}
+
+#new_price::placeholder {
+  color: black;
+}
+
+.btn-secondary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(174 104 140)!important;
+}
+#curved5 {
+    margin-top: 25px;
+}
+
+/* Dollar value  */
+ .input-dollar {
+     position: relative;
+ }
+ .input-dollar.left input {
+     padding-left:18px;
+ }
+
+ .input-dollar:before {
+     position: absolute;
+     top: 0;
+     content:"$";
+     font-size: 1.3em;
+     font-weight: 600;
+ }
+ .input-dollar.left:before {
+    left: 18px;
+    top: -8px;
+ }
+
+ .input-percent {
+     position: relative;
+ }
+
+.input-percent:before {
+     position: absolute;
+     top: 0;
+     content:"%";
+     font-size: 1.3em;
+     font-weight: 600;
+ }
+
+.input-percent.right input {
+     padding-right:21px;
+     text-align:end; 
+ }
+ .input-percent.right:before {
+     right: 14px;
+     top: -8px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+#mobile1, #mobile2, #mobile3, #mobile4, #mobile5, #mobile6, #mobile7 {
+    display: inline;
+}
+
+#mobile5 {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+/* NEW INPUT NUMBER */
+input[type="number"] {
+-webkit-appearance: textfield;
+-moz-appearance: textfield;
+appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.mobile-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    top: -8px;
+    height: 3.41rem;
+}
+
+#mobile5.mobile-input button {
+  height: 3.36rem;
+}
+#mobile6.mobile-input button {
+  height: 3.369rem;
+}
+
+.mobile-input button.left{
+    left: 6px;
+    border: 1.5px solid rgba(106,175,170,1);
+}
+
+.mobile-input button.right{
+    left: -5px;
+    border: 1.5px solid rgba(106,175,170,1);
+}
+
+.mobile-input button:before,
+.mobile-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 0.5rem;
+    height: 1px;
+    background-color:  rgba(99,43,76,1);;
+    transform: translate(-50%, -50%);
+}
+.mobile-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.mobile-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    border: solid #ddd;
+    border-width: 0 2px;
+    text-align: center;
+}
+
+#additional_revenue {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 4.5em;
+}
+
+/* TABLET */
+@media (max-width: 768px){
+    #additional_amount, #year_amount, #clients_output, #avarage_sale, #additional_revenue, #total_amount {
+        top: 21px;
+    }
+
+    #mobile3 {
+        margin-top: 20px;
+        display: block;
+    }
+    #mobile5 {
+        margin-top: 1px;
+    }
+    /* NEW INPUT NUMBER */
+    input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    .mobile-input button {
+        display: inline-block;
+        outline:none;
+        -webkit-appearance: none;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+        top: -8px;
+        height: 3.5rem;
+        padding: 0;
+    }
+    .mobile-input button.left{
+        left: 6px;
+        border: 1.5px solid rgba(106,175,170,1);
+    }
+    .mobile-input button.right{
+        left: -6px;
+        border: 1.5px solid rgba(106,175,170,1);
+    }
+    #mobile1.mobile-input button.left{
+        left: 5px;
+    }
+    #clients_input, 
+    #product_cost {
+        font-size: 1.36em;
+    }
+    .mobile-input button:before,
+    .mobile-input button:after {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 0.5rem;
+        height: 1px;
+        background-color: #212121;
+        transform: translate(-50%, -50%);
+    }
+    .mobile-input button.plus:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    .mobile-input input[type=number] {
+        font-family: sans-serif;
+        max-width: 5rem;
+        padding: .5rem;
+        border: solid #ddd;
+        border-width: 0 2px;
+        text-align: center;
+    }
+    #mobile5.mobile-input button {
+        top: -7px;
+    }
+    #mobile6.mobile-input button {  
+        top: -7px;
+    }
+    /* end NEW INPUT NUMBER */
+    .input-percent.right:before {
+        right: 21px;
+    }
+    #book_session {
+        display: block;
+        padding-top: 41px;
+    }
+    #additional_revenue_text {
+        display: block;
+        padding-top: 41px;
+    }
+    #curved5 {
+        margin-top: 1px;
+    }
+}
+
+@media (max-width: 600px) {
+    #clients_output {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 475px) { 
+    #mobile1, #mobile2, #mobile3, #mobile4, #mobile5, #mobile6, #mobile7 {
+        display: block;
+        text-align: center;
+    }
+    #year_amount, #clients_output, #additional_amount, #avarage_sale, #total_amount {
+        font-size: 1.4em;
+    }
+    #additional_revenue {
+        font-size: 2.4em;
+        padding-bottom: 7px;
+    }
+    #mobile2 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #mobile5 {
+        margin-bottom: 3px;
+    }
+    #mobile7 {
+        margin-top: 20px;
+    }
+    #final-result {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #percent {
+     max-width: 119px;
+    }
+    #digital_product {
+        margin-top: 10px;
+    }
+    #curved1 img {
+        height: 6px;
+        left: -15px;
+        top: 10px;
+    }
+    #curved2 img {
+        height: 6px;
+        top: 10px;
+        left: -2px;
+    }
+    #curved3 img {
+        top: 10px;
+    }
+    #curved7 {
+         padding-top: 20px;
+    }
+    #curved7 img {
+        display: block;
+        position: relative;
+        height: 7px;
+        top: -2px;
+    }
+    #curved8 img {
+        display: block;
+        position: relative;
+        height: 11px;
+        top: -2px;
+    }
+    #curved9 img {
+        display: block;
+        position: relative;
+        height: 11px;
+        top: -3px;
+        left: -6px;
+    }
+    #curved10 img {
+        display: block;
+        position: relative;
+        height: 7px;
+        top: 20px;
+        left: -6px;
+    }
+    #clients_output {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    .final-result {
+        margin-top: 21px;
+        padding: 1.6em 1em;
+    }
+    /* NEW INPUT NUMBER */
+    #mobile2.mobile-input button {
+        top: -7px;
+    }
+    #percent, #new_price {
+        font-size: 1.29em;
+    }
+    #mobile5.mobile-input button {
+        top: -7px;
+    }
+    #mobile5.mobile-input button.right {
+        left: -5px;
+    }
+    #mobile6.mobile-input button {
+        top: -8px!important;
+    }
+    #mobile1.mobile-input button.left {
+        left: 5px;
+    }
+    #mobile3 {
+        margin-top: 1px;
+    }
+    #curved1 img {
+        left: 2px !important;
+        height: 7px;
+    }
+    #mobile4 {
+        padding-top: 0;
+    }
+    #product_cost {
+        font-size: 1.34em;
+    }
+    #book_session {
+        padding-top: 29px;
+    }
+    #additional_revenue_text {
+        padding-top: 25px;
+    }
+    #curved10 {
+        display: block;
+    }
+    #curved10 img {
+        display: inline-block;
+        margin-bottom: 30px;
+        left: 0;
+    }
+}
+@media (max-width: 375px) { 
+    #digital_product {
+        display: block;
+        margin: 0 auto;
+        margin-top: 6px;
+    }
+    #year_amount,
+    #clients_output {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #this_year_mobile {
+        display: block;
+        margin-top: 14px;
+    }
+    #mobile4 {
+        margin-top: -14px;
+    }
+/*    #clients_output {
+        padding-right: 45px;
+        padding-left: 45px;
+    }*/
+    #curved2 img {
+        left: 3px;
+    }
+    #product_cost {
+        font-size: 1.4em;
+    }
+    #curved7 img {
+        top: -26px;
+    }
+}

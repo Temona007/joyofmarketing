@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Font Family -->
+		<style type="text/css">
+			@font-face{font-family:Zilla Slab Bold;src:url('https://static.showit.co/file/l-lfL9A6RDKCr6KruRuQjA/shared/zillaslab-bold-webfont.woff');}
+			@font-face{font-family:Frontage Bold;src:url('https://static.showit.co/file/VnAZTq1bTvGqw3vQYevP2Q/shared/juri_zaech_-_frontage_condensed_bold-webfont.woff');}
+			@font-face{font-family:Signature Collection;src:url('https://static.showit.co/file/yWodM5yASK6JJiGW0mOj_w/shared/signaturecollection-webfont.woff');}
+		</style>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+		<!-- Riyaka script & CSS-->
+		<link   href="style.css" rel="stylesheet">
+		<script src="script.js"></script>
+
+  </head>
+  <body>
+
+		<div class="container" id="art_riyaka_calculator">
+			<div class="row">
+				<div class="col">
+					<h1 style="text-align: center;">How Much Can I Expect To Make as a Portrait Photographer This Year?</h1>
+				</div>
+			</div>
+
+			<div class="row calc-row">
+				<div class="col-12 mt-3">
+					<div id="mobile1" class="mobile-input">
+					<span class="text">If I serve &nbsp;</span>
+					<button onclick="this.parentNode.querySelector('input[type=number]').stepDown(); tinyOffer();" class="left"></button>
+						<input id="clients_input" type="number" value="15" oninput="tinyOffer()" class="btn btn btn-secondary">
+					<button onclick="this.parentNode.querySelector('input[type=number]').stepUp(); tinyOffer();" class="plus right"></button>
+					<span class="text">&nbsp; clients </span>
+					</div> 
+
+					<div id="mobile2" class="mobile-input">
+						<span class="text">at &nbsp;</span>
+						<button onclick="this.parentNode.querySelector('input[type=number]').stepDown(); tinyOffer();" class="left"></button>
+						<span class="input-dollar left">
+							<input id="product_cost" type="number" value="1000" oninput="tinyOffer()" class="btn btn btn-secondary">
+						</span>
+						<button onclick="this.parentNode.querySelector('input[type=number]').stepUp(); tinyOffer();" class="plus right"></button>
+						<span class="text">an average order,</span>
+					</div>
+
+					<br />
+
+					<div id="mobile3">
+						<span class="text">&nbsp;I will make</span>
+						<span id="curved1">
+							<span id="year_amount">$15,000</span>
+							<br>
+							<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+						</span>
+						<span id="curved7">
+							<span class="text" id="this_year_mobile">&nbsp; this year.</span>
+							<br>
+							<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+						</span>
+				    </div>
+
+				</div>
+			</div>
+
+			<div class="row calc-row">
+				<div class="col-12">
+
+					<div id="mobile4">
+						<span class="text">If those  &nbsp;</span>
+						<span id="curved2">
+							<span id="clients_output">15</span>
+							<br>
+							<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+						</span>
+						<span class="text">&nbsp; clients <span id="book_session">book 4 more sessions  
+							<span id="curved9">
+								<span id="15years">over the next 15 years &nbsp;</span>
+								<br>
+								<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+							</span>
+						</span>
+				   </div>
+
+				 	<br />
+
+				 	<div id="mobile5" class="mobile-input">
+						<span class="text">&nbsp; and invest an average sale of &nbsp;</span>
+						<span id="curved3">
+							<span id="avarage_sale">$1,000</span>
+							<br>
+							<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+						</span>
+						<span class="text">&nbsp; </span>
+					</div>
+
+			</div>
+
+			<div class="col-12">
+				<span id="curved11">
+					<div class="final-result">
+						<span class="text">I&#39;ll make an additional  </span>
+						<br>
+						<span id="additional_revenue">$60,000</span>
+						<span class="text">&nbsp; in revenue from my photography business.</span>
+					</div>
+					<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+				</span>
+			</div>
+			
+			<div class="col-12 last-row">
+				<div id="mobile7" class="mobile-input">
+					<span class="text">This means ONE client has a lifetime value of  </span>
+					<span id="curved10">
+						<span id="total_amount" class="">$5,000</span>
+						<br>
+						<img src="https://static.showit.co/1600/asTRa-JeQsWLOwxZwxg1xg/shared/jom-shape.png" alt="gold line">
+					</span>
+					<span class="text">for my business. </span>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>
